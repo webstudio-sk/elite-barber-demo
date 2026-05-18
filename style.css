@@ -297,49 +297,6 @@ img {
   font-size: 0.95rem;
 }
 
-/* CENNÍK */
-.price-box {
-  max-width: 780px;
-  margin: 35px auto 0;
-  background: #080808;
-  border: 1px solid rgba(201, 160, 82, 0.25);
-  border-radius: 24px;
-  padding: 18px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.35);
-}
-
-.price-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 22px;
-  padding: 22px 16px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  text-align: left;
-}
-
-.price-row:last-child {
-  border-bottom: none;
-}
-
-.price-row span {
-  display: block;
-  font-size: 1.05rem;
-  font-weight: 800;
-}
-
-.price-row small {
-  display: block;
-  margin-top: 7px;
-  color: #8f8f8f;
-}
-
-.price-row strong {
-  color: #c9a052;
-  font-size: 1.25rem;
-  white-space: nowrap;
-}
-
 /* BOOKING */
 .booking-section {
   background:
@@ -729,10 +686,6 @@ footer {
   .cards,
   .booking-grid {
     grid-template-columns: 1fr;
-  }
-
-  .price-row {
-    align-items: flex-start;
   }
 
   .gallery-item {
