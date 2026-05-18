@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Barber Studio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGÁCIA -->
+  <nav class="navbar">
+    <div class="logo">Elite Barber</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#domov">Domov</a></li>
+      <li><a href="#sluzby">Služby</a></li>
+      <li><a href="#cennik">Cenník</a></li>
+      <li><a href="#galeria">Galéria</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+
+    <button class="burger" id="burger">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="domov" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Prémiový barber v tvojom meste</p>
+      <h1>Štýlový strih.<br>Dokonalý detail.</h1>
+      <p class="hero-text">
+        Moderné strihy, úprava brady a profesionálna starostlivosť pre mužov.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#kontakt" class="btn">Rezervovať termín</a>
+        <a href="#cennik" class="btn btn-outline">Pozrieť cenník</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLUŽBY -->
+  <section id="sluzby" class="section">
+    <p class="section-tag">Naše služby</p>
+    <h2>Čo ponúkame</h2>
+
+    <div class="cards">
+      <div class="card">
+        <div class="icon">✂️</div>
+        <h3>Pánsky strih</h3>
+        <p>Moderný alebo klasický strih podľa tvojho štýlu.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧔</div>
+        <h3>Úprava brady</h3>
+        <p>Tvarovanie, skracovanie a úprava brady do detailu.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💈</div>
+        <h3>Strih + brada</h3>
+        <p>Kompletný balík pre čistý a sebavedomý vzhľad.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Holenie</h3>
+        <p>Tradičné holenie s horúcim uterákom a starostlivosťou.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CENNÍK -->
+  <section id="cennik" class="section dark">
+    <p class="section-tag">Cenník</p>
+    <h2>Naše ceny</h2>
+
+    <div class="price-box">
+      <div class="price-row">
+        <span>Pánsky strih</span>
+        <strong>18 €</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Strih + brada</span>
+        <strong>28 €</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Úprava brady</span>
+        <strong>12 €</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Holenie</span>
+        <strong>15 €</strong>
+      </div>
+
+      <div class="price-row">
+        <span>Detský strih</span>
+        <strong>14 €</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALÉRIA -->
+  <!-- GALÉRIA -->
+<section id="galeria" class="section">
+  <p class="section-tag">Galéria</p>
+  <h2>Atmosféra štúdia</h2>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="images/barber1.jpg" alt="Barber pri strihaní vlasov">
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/barber2.jpg" alt="Barber pri stylingu vlasov">
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/barber3.jpg" alt="Profesionálna starostlivosť v barbershope">
+    </div>
+  </div>
+</section>
+
+  <!-- KONTAKT + MAPA -->
+  <section id="kontakt" class="section dark">
+    <p class="section-tag">Kontakt</p>
+    <h2>Rezervuj si termín</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Elite Barber Studio</h3>
+
+        <p>📍 Hlavná 12, Bratislava</p>
+        <p>📞 <a href="tel:+421900000000">+421 900 000 000</a></p>
+        <p>📩 <a href="mailto:elitebarber@email.sk">elitebarber@email.sk</a></p>
+        <p>📷 <a href="#">@elitebarberstudio</a></p>
+
+        <div class="hours">
+          <h4>Otváracie hodiny</h4>
+          <p>Po – Pia: 09:00 – 18:00</p>
+          <p>So: 09:00 – 14:00</p>
+          <p>Ne: Zatvorené</p>
+        </div>
+
+        <a href="mailto:elitebarber@email.sk" class="btn contact-btn">Rezervovať termín</a>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps?q=Bratislava%20Hlavna%2012&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Elite Barber Studio · Demo web vytvoril WebStudioSK</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
