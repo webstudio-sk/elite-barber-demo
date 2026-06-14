@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Elite Barber Studio</title>
+  <title>Elite Barber Studio | Moderný barber shop</title>
+  <meta name="description" content="Moderný barber shop s online rezerváciou, službami, galériou, recenziami a kontaktom." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,6 +21,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#domov">Domov</a></li>
       <li><a href="#sluzby">Služby</a></li>
+      <li><a href="#preco">Prečo my</a></li>
       <li><a href="#rezervacia">Rezervácia</a></li>
       <li><a href="#galeria">Galéria</a></li>
       <li><a href="#recenzie">Recenzie</a></li>
@@ -24,281 +29,434 @@
     </ul>
 
     <a href="#rezervacia" class="nav-btn">Rezervovať</a>
-    <button class="burger" id="burger" aria-label="Otvoriť menu">☰</button>
+
+    <button
+      class="burger"
+      id="burger"
+      aria-label="Otvoriť menu"
+      aria-expanded="false"
+      aria-controls="navLinks">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
 
-  <!-- HERO -->
-  <section id="domov" class="hero">
-    <div class="hero-content">
-      <p class="hero-tag">Moderný barber shop</p>
+  <main>
 
-      <h1>Web, cez ktorý si zákazník rezervuje termín bez písania správ.</h1>
+    <!-- HERO -->
+    <section id="domov" class="hero">
+      <div class="hero-content">
+        <p class="hero-tag">Moderný barber shop · Bratislava</p>
 
-      <p class="hero-text">
-        Profesionálna prezentácia barber shopu so službami, galériou,
-        recenziami a jednoduchou online rezerváciou.
-      </p>
+        <h1>Prémiový<br><em>pánsky strih</em><br>a úprava brady.</h1>
 
-      <div class="hero-buttons">
-        <a href="#rezervacia" class="btn">Rezervovať termín</a>
-        <a href="#sluzby" class="btn btn-outline">Pozrieť služby</a>
-      </div>
+        <p class="hero-text">
+          Rezervuj si termín online, vyber službu a príď v čase, ktorý ti vyhovuje.
+          Čistý fade, presná úprava brady a profesionálny prístup — zakaždým.
+        </p>
 
-      <div class="hero-stats">
-        <div>
-          <strong>4.9</strong>
-          <span>hodnotenie</span>
-        </div>
-        <div>
-          <strong>24/7</strong>
-          <span>online rezervácie</span>
-        </div>
-        <div>
-          <strong>100%</strong>
-          <span>mobilný dizajn</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SLUŽBY -->
-  <section id="sluzby" class="section">
-    <p class="section-tag">Služby</p>
-    <h2>Všetko pre čistý a sebavedomý vzhľad</h2>
-    <p class="section-subtitle">
-      Prehľadné služby, ktoré si zákazník vie vybrať ešte predtým,
-      než vám napíše alebo zavolá.
-    </p>
-
-    <div class="cards">
-      <div class="card">
-        <span class="card-number">01</span>
-        <h3>Pánsky strih</h3>
-        <p>Moderný fade, klasický strih alebo úprava podľa predstavy zákazníka.</p>
-      </div>
-
-      <div class="card">
-        <span class="card-number">02</span>
-        <h3>Úprava brady</h3>
-        <p>Tvarovanie, skracovanie a detailná úprava brady pre čistý výsledok.</p>
-      </div>
-
-      <div class="card">
-        <span class="card-number">03</span>
-        <h3>Strih + brada</h3>
-        <p>Kompletný balík pre zákazníkov, ktorí chcú mať všetko vybavené naraz.</p>
-      </div>
-
-      <div class="card">
-        <span class="card-number">04</span>
-        <h3>Detský strih</h3>
-        <p>Rýchly a pohodlný strih pre mladších zákazníkov v príjemnom prostredí.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- REZERVÁCIA -->
-  <section id="rezervacia" class="section booking-section">
-    <p class="section-tag">Rezervácia</p>
-    <h2>Vyber si službu a rezervuj termín</h2>
-    <p class="section-subtitle">
-      Ukážka rezervačného systému. V reálnej verzii sa dá napojiť na Bookio,
-      Reservio, Calendly alebo vlastný formulár.
-    </p>
-
-    <div class="booking-grid">
-      <div class="booking-panel">
-        <h3>1. Vyber službu</h3>
-
-        <label class="booking-option">
-          <input type="radio" name="service" checked>
-          <div>
-            <strong>Pánsky strih</strong>
-            <span>45 min · 18 €</span>
-          </div>
-        </label>
-
-        <label class="booking-option">
-          <input type="radio" name="service">
-          <div>
-            <strong>Strih + brada</strong>
-            <span>60 min · 28 €</span>
-          </div>
-        </label>
-
-        <label class="booking-option">
-          <input type="radio" name="service">
-          <div>
-            <strong>Úprava brady</strong>
-            <span>30 min · 12 €</span>
-          </div>
-        </label>
-
-        <label class="booking-option">
-          <input type="radio" name="service">
-          <div>
-            <strong>Detský strih</strong>
-            <span>30 min · 14 €</span>
-          </div>
-        </label>
-      </div>
-
-      <div class="booking-panel">
-        <h3>2. Vyber dátum</h3>
-
-        <div class="calendar-box">
-          <div class="calendar-header">
-            <span>Január 2026</span>
-          </div>
-
-          <div class="calendar-days">
-            <span>Po</span>
-            <span>Ut</span>
-            <span>St</span>
-            <span>Št</span>
-            <span>Pi</span>
-            <span>So</span>
-            <span>Ne</span>
-          </div>
-
-          <div class="calendar-grid">
-            <button class="muted" disabled>29</button>
-            <button class="muted" disabled>30</button>
-            <button class="muted" disabled>31</button>
-
-            <button data-day="1" data-times="09:00,10:30,12:00,15:00">1</button>
-            <button data-day="2" data-times="08:30,11:00,13:30,16:30">2</button>
-            <button data-day="3" data-times="10:00,12:30,14:00">3</button>
-            <button data-day="4" data-times="09:30,11:30,15:30,17:00">4</button>
-
-            <button data-day="5" data-times="08:00,10:00,13:00,16:00">5</button>
-            <button data-day="6" data-times="09:00,11:00,14:30">6</button>
-            <button data-day="7" data-times="10:30,12:00,15:00,17:30">7</button>
-            <button class="selected" data-day="8" data-times="09:00,10:30,12:00,14:30,16:00,17:30">8</button>
-            <button data-day="9" data-times="08:30,10:00,13:30,15:30">9</button>
-            <button data-day="10" data-times="09:30,12:30,16:30">10</button>
-            <button data-day="11" data-times="10:00,11:30,14:00,17:00">11</button>
-
-            <button data-day="12" data-times="08:00,09:30,12:00,15:00">12</button>
-            <button data-day="13" data-times="10:30,13:00,16:00">13</button>
-            <button data-day="14" data-times="09:00,11:00,14:30,17:30">14</button>
-            <button data-day="15" data-times="08:30,12:30,15:30">15</button>
-            <button data-day="16" data-times="09:30,11:30,13:30,16:30">16</button>
-            <button data-day="17" data-times="10:00,12:00,14:00">17</button>
-            <button data-day="18" data-times="09:00,13:00,15:00,17:00">18</button>
-          </div>
+        <div class="hero-buttons">
+          <a href="#rezervacia" class="btn">Rezervovať termín</a>
+          <a href="#sluzby" class="btn btn-outline">Pozrieť služby</a>
         </div>
 
-        <p class="booking-note">
-          Po výbere dátumu sa zobrazia dostupné časy pre daný deň.
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>4.9</strong>
+            <span>hodnotenie klientov</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>24/7</strong>
+            <span>online rezervácia</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>18 €</strong>
+            <span>strih od</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scrolluj</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- SLUŽBY -->
+    <section id="sluzby" class="section">
+      <div class="section-header">
+        <p class="section-tag">Služby</p>
+        <h2>Vyber si službu<br>podľa svojho štýlu</h2>
+        <p class="section-subtitle">
+          Prehľadný cenník — žiadne prekvapenia, len čistý výsledok.
         </p>
       </div>
 
-      <div class="booking-panel">
-        <h3>3. Dostupné časy</h3>
+      <div class="cards">
+        <div class="card">
+          <div class="card-top">
+            <span class="card-icon">✂</span>
+            <strong class="card-price">18 €</strong>
+          </div>
+          <h3>Pánsky strih</h3>
+          <p>Moderný fade, klasický strih alebo úprava podľa predstavy zákazníka.</p>
+          <div class="service-meta">
+            <span class="meta-time">⏱ 45 min</span>
+            <a href="#rezervacia" class="card-btn">Rezervovať</a>
+          </div>
+        </div>
 
-        <p class="selected-date" id="selectedDate">
-          Vybraný dátum: 8. január 2026
+        <div class="card card-featured">
+          <div class="card-badge">Najobľúbenejšie</div>
+          <div class="card-top">
+            <span class="card-icon">✂</span>
+            <strong class="card-price">28 €</strong>
+          </div>
+          <h3>Strih + brada</h3>
+          <p>Kompletný balík pre zákazníkov, ktorí chcú čistý vzhľad vlasov aj brady.</p>
+          <div class="service-meta">
+            <span class="meta-time">⏱ 60 min</span>
+            <a href="#rezervacia" class="card-btn">Rezervovať</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="card-icon">◈</span>
+            <strong class="card-price">12 €</strong>
+          </div>
+          <h3>Úprava brady</h3>
+          <p>Tvarovanie, skracovanie a detailná úprava brady pre ostrý výsledok.</p>
+          <div class="service-meta">
+            <span class="meta-time">⏱ 30 min</span>
+            <a href="#rezervacia" class="card-btn">Rezervovať</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <span class="card-icon">★</span>
+            <strong class="card-price">14 €</strong>
+          </div>
+          <h3>Detský strih</h3>
+          <p>Rýchly a pohodlný strih pre mladších zákazníkov v príjemnom prostredí.</p>
+          <div class="service-meta">
+            <span class="meta-time">⏱ 30 min</span>
+            <a href="#rezervacia" class="card-btn">Rezervovať</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREČO MY -->
+    <section id="preco" class="section dark">
+      <div class="section-header">
+        <p class="section-tag">Prečo si vybrať nás</p>
+        <h2>Detail, presnosť<br>a čistý výsledok</h2>
+        <p class="section-subtitle">
+          Barber shop nie je len o strihu — je to o pocite, štýle a dôvere,
+          že zákazník odchádza spokojný.
         </p>
+      </div>
 
-        <div class="time-grid" id="timeGrid">
-          <button>09:00</button>
-          <button>10:30</button>
-          <button>12:00</button>
-          <button>14:30</button>
-          <button>16:00</button>
-          <button>17:30</button>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">✂</div>
+          <h3>Presný strih</h3>
+          <p>Každý strih je robený detailne podľa tvaru hlavy a štýlu zákazníka.</p>
         </div>
 
-        <a href="mailto:elitebarber@email.sk" class="btn full-btn">
-          Rezervovať termín
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALÉRIA -->
-  <section id="galeria" class="section">
-    <p class="section-tag">Galéria</p>
-    <h2>Ukážka práce a atmosféry</h2>
-
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="images/barber1.jpg" alt="Moderný pánsky strih">
-      </div>
-
-      <div class="gallery-item">
-        <img src="images/barber2.jpg" alt="Úprava vlasov v barbershope">
-      </div>
-
-      <div class="gallery-item">
-        <img src="images/barber3.jpg" alt="Profesionálny barber styling">
-      </div>
-    </div>
-  </section>
-
-  <!-- RECENZIE -->
-  <section id="recenzie" class="section dark">
-    <p class="section-tag">Recenzie</p>
-    <h2>Čo hovoria zákazníci</h2>
-
-    <div class="reviews">
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>Výborný prístup, čisté prostredie a perfektný strih. Určite prídem znova.</p>
-        <strong>Martin K.</strong>
-      </div>
-
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>Rezervácia bola jednoduchá a výsledok presne podľa predstavy.</p>
-        <strong>Tomáš R.</strong>
-      </div>
-
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p>Profesionálny barber shop, super atmosféra a kvalitná práca.</p>
-        <strong>Adam P.</strong>
-      </div>
-    </div>
-  </section>
-
-  <!-- KONTAKT + MAPA -->
-  <section id="kontakt" class="section contact-section">
-    <p class="section-tag">Kontakt</p>
-    <h2>Kde nás nájdeš</h2>
-
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Elite Barber Studio</h3>
-
-        <p><span>Adresa</span> Hlavná 12, Bratislava</p>
-        <p><span>Telefón</span> <a href="tel:+421900000000">+421 900 000 000</a></p>
-        <p><span>Email</span> <a href="mailto:elitebarber@email.sk">elitebarber@email.sk</a></p>
-        <p><span>Instagram</span> <a href="#">@elitebarberstudio</a></p>
-
-        <div class="hours">
-          <h4>Otváracie hodiny</h4>
-          <p>Po – Pia: 09:00 – 18:00</p>
-          <p>So: 09:00 – 14:00</p>
-          <p>Ne: Zatvorené</p>
+        <div class="feature">
+          <div class="feature-icon">⌚</div>
+          <h3>Rýchla rezervácia</h3>
+          <p>Vyber si službu, dátum a čas bez telefonovania alebo čakania na odpoveď.</p>
         </div>
 
-        <a href="#rezervacia" class="btn contact-btn">Rezervovať termín</a>
+        <div class="feature">
+          <div class="feature-icon">★</div>
+          <h3>Profesionálny prístup</h3>
+          <p>Čisté prostredie, pohodová atmosféra a výsledok, ku ktorému sa zákazník rád vráti.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REZERVÁCIA -->
+    <section id="rezervacia" class="section booking-section">
+      <div class="section-header">
+        <p class="section-tag">Rezervácia</p>
+        <h2>Vyber si termín online</h2>
+      </div>
+      <div class="booking-grid">
+        <div class="booking-panel">
+          <h3><span class="step-num">1</span> Vyber službu</h3>
+
+          <label class="booking-option">
+            <input type="radio" name="service" value="Pánsky strih · 45 min · 18 €" checked>
+            <div class="option-content">
+              <strong>Pánsky strih</strong>
+              <span>45 min · 18 €</span>
+            </div>
+            <div class="option-check">✓</div>
+          </label>
+
+          <label class="booking-option">
+            <input type="radio" name="service" value="Strih + brada · 60 min · 28 €">
+            <div class="option-content">
+              <strong>Strih + brada</strong>
+              <span>60 min · 28 €</span>
+            </div>
+            <div class="option-check">✓</div>
+          </label>
+
+          <label class="booking-option">
+            <input type="radio" name="service" value="Úprava brady · 30 min · 12 €">
+            <div class="option-content">
+              <strong>Úprava brady</strong>
+              <span>30 min · 12 €</span>
+            </div>
+            <div class="option-check">✓</div>
+          </label>
+
+          <label class="booking-option">
+            <input type="radio" name="service" value="Detský strih · 30 min · 14 €">
+            <div class="option-content">
+              <strong>Detský strih</strong>
+              <span>30 min · 14 €</span>
+            </div>
+            <div class="option-check">✓</div>
+          </label>
+        </div>
+
+        <div class="booking-panel">
+          <h3><span class="step-num">2</span> Vyber dátum</h3>
+
+          <div class="calendar-box">
+            <div class="calendar-header">
+              <span>Január 2026</span>
+            </div>
+
+            <div class="calendar-days">
+              <span>Po</span>
+              <span>Ut</span>
+              <span>St</span>
+              <span>Št</span>
+              <span>Pi</span>
+              <span>So</span>
+              <span>Ne</span>
+            </div>
+
+            <div class="calendar-grid">
+              <button class="muted" disabled>29</button>
+              <button class="muted" disabled>30</button>
+              <button class="muted" disabled>31</button>
+
+              <button data-day="1" data-times="09:00,10:30,12:00,15:00">1</button>
+              <button data-day="2" data-times="08:30,11:00,13:30,16:30">2</button>
+              <button data-day="3" data-times="10:00,12:30,14:00">3</button>
+              <button data-day="4" data-times="09:30,11:30,15:30,17:00">4</button>
+
+              <button data-day="5" data-times="08:00,10:00,13:00,16:00">5</button>
+              <button data-day="6" data-times="09:00,11:00,14:30">6</button>
+              <button data-day="7" data-times="10:30,12:00,15:00,17:30">7</button>
+              <button class="selected" data-day="8" data-times="09:00,10:30,12:00,14:30,16:00,17:30">8</button>
+              <button data-day="9" data-times="08:30,10:00,13:30,15:30">9</button>
+              <button data-day="10" data-times="09:30,12:30,16:30">10</button>
+              <button data-day="11" data-times="10:00,11:30,14:00,17:00">11</button>
+
+              <button data-day="12" data-times="08:00,09:30,12:00,15:00">12</button>
+              <button data-day="13" data-times="10:30,13:00,16:00">13</button>
+              <button data-day="14" data-times="09:00,11:00,14:30,17:30">14</button>
+              <button data-day="15" data-times="08:30,12:30,15:30">15</button>
+              <button data-day="16" data-times="09:30,11:30,13:30,16:30">16</button>
+              <button data-day="17" data-times="10:00,12:00,14:00">17</button>
+              <button data-day="18" data-times="09:00,13:00,15:00,17:00">18</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-panel">
+          <h3><span class="step-num">3</span> Dokonči rezerváciu</h3>
+
+          <p class="selected-date" id="selectedDate" aria-live="polite">
+            📅 8. január 2026
+          </p>
+
+          <div class="time-grid" id="timeGrid">
+            <button class="active-time">09:00</button>
+            <button>10:30</button>
+            <button>12:00</button>
+            <button>14:30</button>
+            <button>16:00</button>
+            <button>17:30</button>
+          </div>
+
+          <div class="booking-form">
+            <label>
+              Meno
+              <input type="text" id="customerName" placeholder="Tvoje meno">
+            </label>
+
+            <label>
+              Telefón
+              <input type="tel" id="customerPhone" placeholder="+421 900 000 000">
+            </label>
+          </div>
+
+          <a href="#" class="btn full-btn" id="bookingButton">
+            Potvrdiť rezerváciu →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALÉRIA -->
+    <section id="galeria" class="section">
+      <div class="section-header">
+        <p class="section-tag">Galéria</p>
+        <h2>Ukážka práce</h2>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item gallery-large">
+          <img
+            src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85"
+            alt="Moderný pánsky strih"
+          >
+          <div class="gallery-overlay"><span>Pánsky strih</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85"
+            alt="Interiér barber shopu"
+          >
+          <div class="gallery-overlay"><span>Interiér</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85"
+            alt="Profesionálny barber pri práci"
+          >
+          <div class="gallery-overlay"><span>Barber pri práci</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENZIE -->
+    <section id="recenzie" class="section dark">
+      <div class="section-header">
+        <p class="section-tag">Recenzie</p>
+        <h2>Čo hovoria zákazníci</h2>
       </div>
 
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps?q=Bratislava%20Hlavna%2012&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <div class="reviews">
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>„Výborný prístup, čisté prostredie a perfektný strih. Určite prídem znova."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">M</div>
+            <strong>Martin K.</strong>
+          </div>
+        </div>
+
+        <div class="review review-featured">
+          <div class="stars">★★★★★</div>
+          <p>„Rezervácia bola jednoduchá a výsledok presne podľa predstavy. Odporúčam každému."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">T</div>
+            <strong>Tomáš R.</strong>
+          </div>
+        </div>
+
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>„Profesionálny barber shop, super atmosféra a kvalitná práca. Top miesto."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <strong>Adam P.</strong>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="cta-box">
+        <p class="section-tag">Nový termín</p>
+        <h2>Chceš vyzerať fresh?</h2>
+        <p>
+          Vyber si službu, zvoľ dátum a rezervuj si termín ešte dnes.
+          Prvý krok trvá menej ako minútu.
+        </p>
+        <a href="#rezervacia" class="btn">Rezervovať teraz →</a>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section contact-section">
+      <div class="section-header">
+        <p class="section-tag">Kontakt</p>
+        <h2>Kde nás nájdeš</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Elite Barber Studio</h3>
+
+          <div class="contact-item">
+            <span class="contact-label">Adresa</span>
+            <p>Hlavná 12, Bratislava</p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Telefón</span>
+            <p><a href="tel:+421900000000">+421 900 000 000</a></p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <p><a href="mailto:elitebarber@email.sk">elitebarber@email.sk</a></p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Instagram</span>
+            <p><a href="#">@elitebarberstudio</a></p>
+          </div>
+
+          <div class="hours">
+            <h4>Otváracie hodiny</h4>
+            <div class="hours-grid">
+              <span>Po – Pia</span><span>09:00 – 18:00</span>
+              <span>Sobota</span><span>09:00 – 14:00</span>
+              <span>Nedeľa</span><span class="closed">Zatvorené</span>
+            </div>
+          </div>
+
+          <a href="#rezervacia" class="btn contact-btn">Rezervovať termín</a>
+        </div>
+
+        <div class="map">
+          <iframe
+            title="Mapa Elite Barber Studio"
+            src="https://www.google.com/maps?q=Bratislava%20Hlavna%2012&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2026 Elite Barber Studio · Demo web vytvoril WebStudioSK</p>
+    <div class="footer-inner">
+      <a href="#domov" class="footer-logo"><span>Elite</span> Barber</a>
+      <p>© 2026 Elite Barber Studio · Bratislava</p>
+      <div class="footer-links">
+        <a href="#rezervacia">Rezervovať</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
